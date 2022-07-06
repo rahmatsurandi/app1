@@ -1,0 +1,41 @@
+<ngx-loading-bar [includeSpinner]="false" [height]="'15px'" [color]="'#29d'">
+</ngx-loading-bar>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">
+      <button disabled="disabled" class="btn btn-primary btn-lg">
+        Baleria.NEWS
+      </button>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" routerLink=""
+          ><button class="btn btn-primary btn-sm">Top Headline News</button>
+        </a>
+        <a class="nav-link active" aria-current="page" routerLink="techno">
+          <button class="btn btn-primary btn-sm">Technology News</button>
+        </a>
+        <a class="nav-link active" aria-current="page" routerLink="buzz">
+          <button class="btn btn-primary btn-sm">Business News</button></a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<footer>
+  <p class="text-center" style="font-weight: bold">
+    &copy; & &reg; Baleria.NEWS juli 2022
+  </p>
+</footer>
